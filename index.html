@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='travel-goblin'>
+  <head>
+    <h1>Travel Goblin</h1>
+
+  </head>
+
+  <body>
+    <div ng-controller='InputFormController'>
+      <form>
+        <label>Please enter your destination city:</label>
+        <input type='text' ng-model='destination.city' required />
+        <label>and the country:</label>
+        <input type='text' ng-model='destination.country' required />
+        <input type='submit' ng-click='search(destination)' value="Let's go!" />
+      </form>
+
+    </div>
+
+
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
+
+
